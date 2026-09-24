@@ -251,7 +251,7 @@ export default function App() {
       </section>
 
       {/* Practice Areas Section */}
-      <section id="practices" className="py-20 px-4 sm:px-8 bg-[#090b10] border-t border-slate-800">
+      <section id="practices" className="py-20 px-4 sm:px-8 bg-[#090b10] border-t border-slate-800 scroll-mt-20">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-mono text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">
@@ -341,7 +341,7 @@ export default function App() {
       </section>
 
       {/* Retainer Structure & IOLTA */}
-      <section id="retainers" className="py-20 px-4 sm:px-8 bg-[#07080b]">
+      <section id="retainers" className="py-20 px-4 sm:px-8 bg-[#07080b] scroll-mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="text-xs font-mono text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">
@@ -412,6 +412,88 @@ export default function App() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section id="partners" className="py-20 px-4 sm:px-8 bg-[#090b10] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-mono text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">
+              PARTNERSHIP DESK
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-serif mt-4">
+              Managing Partners & Trial Counsel
+            </h2>
+            <p className="text-slate-400 text-sm mt-3">
+              Elite corporate architects and courtroom litigators from top-tier institutional firms, dedicated exclusively to boutique client mandates.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
+              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
+              <span className="text-[10px] font-mono text-amber-400 uppercase">M&A & PRIVATE EQUITY</span>
+              <h4 className="text-lg font-bold text-white mt-1">Jonathan Hastings, J.D.</h4>
+              <p className="text-xs text-slate-400 mt-2">Harvard Law School • Former Kirkland & Ellis Partner • Led $4.2B+ in lower-middle market carve-outs.</p>
+            </div>
+
+            <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
+              <span className="text-[10px] font-mono text-cyan-400 uppercase">TRIAL PRACTICE & CHANCERY</span>
+              <h4 className="text-lg font-bold text-white mt-1">Victoria Sterling, J.D.</h4>
+              <p className="text-xs text-slate-400 mt-2">Columbia Law • Fellow, American College of Trial Lawyers • 24 First-Chair Federal Jury Verdicts.</p>
+            </div>
+
+            <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
+              <span className="text-[10px] font-mono text-emerald-400 uppercase">FUND FORMATION & SEC</span>
+              <h4 className="text-lg font-bold text-white mt-1">Alexander Vance, LL.M.</h4>
+              <p className="text-xs text-slate-400 mt-2">NYU School of Law • Specialized in 3(c)(1) and 3(c)(7) private fund formation and cross-border syndication.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Privileged Vault Section */}
+      <section id="vault" className="py-20 px-4 sm:px-8 bg-[#07080b] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto bg-[#0c0e14] border border-slate-800 rounded-3xl p-8 sm:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <span className="text-xs font-mono text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">
+                ENCRYPTED REPOSITORY
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-serif mt-4">
+                Privileged Client Matter Vault
+              </h2>
+              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                Direct client access to court filings, closing binders, escrow reconciliations, and cap table models protected by zero-knowledge end-to-end encryption.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <button
+                  onClick={() => setIsAdminOpen(true)}
+                  className="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-black font-bold font-mono text-xs rounded-xl transition shadow-lg shadow-amber-500/20"
+                >
+                  ACCESS PRIVILEGED VAULT
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl space-y-3 font-mono text-xs">
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Security Standard:</span>
+                <span className="text-white font-bold">AES-256 GCM + Hardware Token</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Audit Trail:</span>
+                <span className="text-emerald-400 font-bold">100% Immutable Timestamped</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span className="text-slate-400">Privilege Shield:</span>
+                <span className="text-amber-400 font-bold">Federal Rule 502 Non-Waiver</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
