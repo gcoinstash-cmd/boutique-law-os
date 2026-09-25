@@ -49,17 +49,17 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white tracking-wide font-serif">PARTNER ACCESS CONSOLE</h3>
-                <p className="text-xs text-slate-400">Vanguard & Hastings Legal Operating System</p>
+                <p className="text-base text-zinc-200 leading-relaxed">Vanguard & Hastings Legal Operating System</p>
               </div>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono text-amber-400 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold font-mono text-amber-400 uppercase tracking-wider mb-2">
                   Partner Security Passkey
                 </label>
                 <div className="relative">
-                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-500" />
+                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-300" />
                   <input
                     type="password"
                     value={passkey}
@@ -86,14 +86,14 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <button
                   type="button"
                   onClick={autofillPasskey}
-                  className="py-3 px-4 bg-amber-950/60 hover:bg-amber-900/60 border border-amber-500/30 text-amber-300 font-mono text-xs rounded-xl transition-all"
+                  className="py-3 px-4 bg-amber-950/60 hover:bg-amber-900/60 border border-amber-500/30 text-amber-300 font-mono text-base font-semibold min-h-[44px] rounded-xl transition-all"
                 >
                   ⚡ Auto-Fill: law2026
                 </button>
               </div>
             </form>
 
-            <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-slate-800 text-xs font-semibold text-slate-300 flex items-center justify-between">
               <span>Privileged Attorney-Client Work Product</span>
               <span className="font-mono text-amber-400">Vault Encrypted</span>
             </div>
@@ -107,10 +107,10 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-white font-serif">Executive Managing Partner Ledger</h4>
-                  <p className="text-xs text-slate-400">Active Retainers, Trust Accounts & Matter Index</p>
+                  <p className="text-base text-zinc-200 leading-relaxed">Active Retainers, Trust Accounts & Matter Index</p>
                 </div>
               </div>
-              <span className="px-2.5 py-1 text-[10px] font-mono bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full flex items-center gap-1.5">
+              <span className="px-2.5 py-1 text-xs font-semibold tracking-wider font-mono bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
                 ACTIVE
               </span>
@@ -123,7 +123,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <DollarSign className="w-3.5 h-3.5 text-amber-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">$1,840,000</div>
-                <div className="text-[10px] text-emerald-400 mt-1">100% Retainer Backed</div>
+                <div className="text-xs font-semibold tracking-wider text-emerald-400 mt-1">100% Retainer Backed</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -132,7 +132,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Briefcase className="w-3.5 h-3.5 text-cyan-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">24</div>
-                <div className="text-[10px] text-cyan-400 mt-1">3 M&A Closings in Q4</div>
+                <div className="text-xs font-semibold tracking-wider text-cyan-400 mt-1">3 M&A Closings in Q4</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -141,7 +141,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Award className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">96.8%</div>
-                <div className="text-[10px] text-emerald-400 mt-1">Avg Partner Rate: $950/hr</div>
+                <div className="text-xs font-semibold tracking-wider text-emerald-400 mt-1">Avg Partner Rate: $950/hr</div>
               </div>
             </div>
 
@@ -153,21 +153,21 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                     <span className="font-semibold text-white">Project Titan (Series B Equity Financing)</span>
                     <span className="text-slate-400 ml-2">Lead: E. Hastings, Esq. • $45k Retainer</span>
                   </div>
-                  <span className="text-amber-400 font-mono text-[11px] bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">DOCUMENT REVIEW</span>
+                  <span className="text-amber-400 font-mono text-xs font-semibold bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">DOCUMENT REVIEW</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">Apex Real Estate Syndication Fund III</span>
                     <span className="text-slate-400 ml-2">Lead: R. Vanguard, Esq. • $75k Retainer</span>
                   </div>
-                  <span className="text-emerald-400 font-mono text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">CLOSING READY</span>
+                  <span className="text-emerald-400 font-mono text-xs font-semibold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">CLOSING READY</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">BioTech Patent Cross-Licensing Defense</span>
                     <span className="text-slate-400 ml-2">Lead: S. Vance, Esq. • $120k Retainer</span>
                   </div>
-                  <span className="text-cyan-400 font-mono text-[11px] bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">ARBITRATION</span>
+                  <span className="text-cyan-400 font-mono text-xs font-semibold bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">ARBITRATION</span>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="flex gap-2">
                 <button
                   onClick={onClose}
-                  className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-black font-semibold rounded-xl text-xs transition-all shadow-md font-mono"
+                  className="px-5 py-3 min-h-[44px] bg-amber-600 hover:bg-amber-500 text-black font-semibold rounded-xl text-base font-semibold min-h-[44px] transition-all shadow-md font-mono"
                 >
                   Exit Console
                 </button>

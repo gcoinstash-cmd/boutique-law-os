@@ -96,7 +96,7 @@ export default function App() {
         <span className="text-slate-600">•</span>
         <button 
           onClick={() => setIsAdminOpen(true)}
-          className="text-amber-400 hover:text-amber-300 font-mono text-[11px] underline ml-2 font-semibold"
+          className="text-amber-400 hover:text-amber-300 font-mono text-xs font-semibold underline ml-2 font-semibold"
         >
           [ PARTNER PORTAL ]
         </button>
@@ -113,7 +113,7 @@ export default function App() {
               <span className="font-extrabold tracking-wider text-lg text-white font-serif flex items-center gap-1.5">
                 VANGUARD<span className="text-amber-400">&</span>HASTINGS
               </span>
-              <p className="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Boutique Corporate & Trial OS</p>
+              <p className="text-xs font-semibold tracking-wider tracking-widest text-slate-400 uppercase font-mono">Boutique Corporate & Trial OS</p>
             </div>
           </div>
 
@@ -200,7 +200,7 @@ export default function App() {
                     <div className="w-3 h-3 rounded-full bg-amber-400 animate-ping"></div>
                     <span className="text-xs font-mono text-amber-400 uppercase tracking-wider">MATTER PIPELINE TELEMETRY</span>
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">PRIVILEGED TIER-1</span>
+                  <span className="text-xs text-slate-300 font-mono">PRIVILEGED TIER-1</span>
                 </div>
 
                 <div className="space-y-4 font-mono">
@@ -280,7 +280,7 @@ export default function App() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0c0e14] via-transparent to-black/40"></div>
-                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-[10px] font-mono text-amber-400 uppercase">
+                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-xs font-semibold tracking-wider font-mono text-amber-400 uppercase">
                       {practice.category}
                     </span>
                   </div>
@@ -293,13 +293,13 @@ export default function App() {
                         </h3>
                       </div>
                       <span className="font-mono font-bold text-amber-400 text-xs block mb-2">{practice.retainerTier}</span>
-                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                      <p className="text-base text-zinc-200 leading-relaxed line-clamp-2 leading-relaxed">
                         {practice.tagline}
                       </p>
                     </div>
 
                     <div className="space-y-2 pt-2 border-t border-slate-800/80">
-                      <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Scope of Representation:</span>
+                      <span className="text-xs font-semibold font-mono text-slate-400 uppercase tracking-wider block">Scope of Representation:</span>
                       <ul className="text-xs space-y-1 text-slate-300">
                         {practice.scope.slice(0, 3).map((item, idx) => (
                           <li key={idx} className="flex items-center space-x-1.5">
@@ -361,7 +361,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">Full IOLTA Retainer Segregation</h4>
-                  <p className="text-xs text-slate-400 mt-1">Funds are never comingled with operating capital; drawn strictly upon earned billable milestones.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">Funds are never comingled with operating capital; drawn strictly upon earned billable milestones.</p>
                 </div>
               </div>
 
@@ -371,7 +371,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">Encrypted Virtual Data Room (VDR)</h4>
-                  <p className="text-xs text-slate-400 mt-1">256-bit AES encrypted client repository for cap tables, board consents, and M&A schedules.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">256-bit AES encrypted client repository for cap tables, board consents, and M&A schedules.</p>
                 </div>
               </div>
             </div>
@@ -379,12 +379,12 @@ export default function App() {
 
           <div className="lg:col-span-6 bg-[#0c0e14] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
             <h3 className="text-lg font-bold text-white font-serif">Confidential Conflict Check & Retainer Estimator</h3>
-            <p className="text-xs text-slate-400">Submit your matter details to initiate automated conflict clearing:</p>
+            <p className="text-base text-zinc-200 leading-relaxed">Submit your matter details to initiate automated conflict clearing:</p>
 
             <form onSubmit={handleConsultSubmit} className="space-y-4">
               <div>
-                <label className="text-xs font-mono text-slate-300 block mb-1">Matter Category</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none font-mono">
+                <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Matter Category</label>
+                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none font-mono">
                   <option>M&A Asset Purchase / Carve-Out ($35k Retainer)</option>
                   <option>Venture Capital / Fund Formation ($25k Retainer)</option>
                   <option>Complex Commercial Litigation ($50k Retainer)</option>
@@ -394,19 +394,19 @@ export default function App() {
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-mono text-slate-300 block mb-1">Entity Name</label>
-                  <input required placeholder="Apex Holdings LLC" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Entity Name</label>
+                  <input required placeholder="Apex Holdings LLC" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none" />
                 </div>
                 <div>
-                  <label className="text-xs font-mono text-slate-300 block mb-1">Adverse Parties (Conflicts)</label>
-                  <input placeholder="None / Target Corp" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Adverse Parties (Conflicts)</label>
+                  <input placeholder="None / Target Corp" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none" />
                 </div>
               </div>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-amber-500/20 font-mono"
+                  className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl text-base font-semibold tracking-wider transition-all shadow-lg shadow-amber-500/20 font-mono"
                 >
                   CLEAR CONFLICTS & REQUEST ENGAGEMENT
                 </button>
@@ -434,23 +434,23 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
               <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
-              <span className="text-[10px] font-mono text-amber-400 uppercase">M&A & PRIVATE EQUITY</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-amber-400 uppercase">M&A & PRIVATE EQUITY</span>
               <h4 className="text-lg font-bold text-white mt-1">Jonathan Hastings, J.D.</h4>
-              <p className="text-xs text-slate-400 mt-2">Harvard Law School • Former Kirkland & Ellis Partner • Led $4.2B+ in lower-middle market carve-outs.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Harvard Law School • Former Kirkland & Ellis Partner • Led $4.2B+ in lower-middle market carve-outs.</p>
             </div>
 
             <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
               <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
-              <span className="text-[10px] font-mono text-cyan-400 uppercase">TRIAL PRACTICE & CHANCERY</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-cyan-400 uppercase">TRIAL PRACTICE & CHANCERY</span>
               <h4 className="text-lg font-bold text-white mt-1">Victoria Sterling, J.D.</h4>
-              <p className="text-xs text-slate-400 mt-2">Columbia Law • Fellow, American College of Trial Lawyers • 24 First-Chair Federal Jury Verdicts.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Columbia Law • Fellow, American College of Trial Lawyers • 24 First-Chair Federal Jury Verdicts.</p>
             </div>
 
             <div className="p-6 bg-[#0c0e14] border border-slate-800 rounded-2xl group hover:border-amber-500/40 transition">
               <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Partner" className="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-[1.02] transition" />
-              <span className="text-[10px] font-mono text-emerald-400 uppercase">FUND FORMATION & SEC</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 uppercase">FUND FORMATION & SEC</span>
               <h4 className="text-lg font-bold text-white mt-1">Alexander Vance, LL.M.</h4>
-              <p className="text-xs text-slate-400 mt-2">NYU School of Law • Specialized in 3(c)(1) and 3(c)(7) private fund formation and cross-border syndication.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">NYU School of Law • Specialized in 3(c)(1) and 3(c)(7) private fund formation and cross-border syndication.</p>
             </div>
           </div>
         </div>
@@ -506,7 +506,7 @@ export default function App() {
               <Scale className="w-4 h-4 text-amber-400" />
               <span className="font-bold text-white font-serif tracking-wider">VANGUARD & HASTINGS</span>
             </div>
-            <p className="text-slate-400 text-[11px] leading-relaxed">
+            <p className="text-slate-400 text-xs font-semibold leading-relaxed">
               Boutique Corporate & Trial Counsel Operating System. Architected for middle-market transaction advisory, private wealth holdings, and complex litigation.
             </p>
           </div>
@@ -533,7 +533,7 @@ export default function App() {
 
           <div className="space-y-3">
             <h5 className="font-mono text-white text-xs uppercase tracking-wider">Partner Access</h5>
-            <p className="text-[11px] text-slate-400">
+            <p className="text-xs font-semibold text-slate-400">
               Access the confidential partner matter ledger with the 1-click passkey:
             </p>
             <button
@@ -545,7 +545,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-slate-300">
           <div>© 2026 Vanguard & Hastings LLP. Attorney Advertising. Turnkey Legal Counsel Operating System.</div>
           <div className="mt-2 sm:mt-0 font-mono text-amber-400">Passkey: law2026</div>
         </div>
@@ -573,29 +573,29 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white font-serif">Retain Corporate Legal Counsel</h3>
-                    <p className="text-xs text-slate-400">Initiate confidential intake & matter scoping</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Initiate confidential intake & matter scoping</p>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Corporate Officer Name</label>
-                  <input required placeholder="Eleanor Vance, CEO" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Corporate Officer Name</label>
+                  <input required placeholder="Eleanor Vance, CEO" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Corporate Email</label>
-                    <input required type="email" placeholder="vance@apexholdings.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Corporate Email</label>
+                    <input required type="email" placeholder="vance@apexholdings.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none" />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Direct Phone</label>
-                    <input required type="tel" placeholder="+1 (415) 890-2100" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Direct Phone</label>
+                    <input required type="tel" placeholder="+1 (415) 890-2100" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Target Engagement Type</label>
-                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-amber-500 outline-none font-mono">
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Target Engagement Type</label>
+                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base text-white focus:border-amber-500 outline-none font-mono">
                     <option>Mergers, Acquisitions & Asset Purchase ($35k Retainer)</option>
                     <option>Fund Syndication & PPM Private Placement ($25k Retainer)</option>
                     <option>High-Stakes Commercial Trial Defense ($50k Retainer)</option>
@@ -605,7 +605,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-amber-500/25 mt-4 font-mono"
+                  className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl text-base font-semibold tracking-wider transition-all shadow-lg shadow-amber-500/25 mt-4 font-mono"
                 >
                   TRANSMIT CONFIDENTIAL INTAKE
                 </button>
@@ -616,7 +616,7 @@ export default function App() {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h4 className="text-xl font-bold text-white font-serif">Matter Received</h4>
-                <p className="text-xs text-slate-400 max-w-xs mx-auto">
+                <p className="text-base text-zinc-200 leading-relaxed max-w-xs mx-auto">
                   Your inquiry is protected by attorney-client privilege. Managing partners will complete conflict checks and return engagement terms within 24 hours.
                 </p>
               </div>
